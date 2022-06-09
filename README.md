@@ -1,0 +1,1 @@
+Collection of circuits and examples that I will use mainly for testing purposes. Most of them have been taken or adapted from circuits designed by the people at [Polygon Hermez](https://github.com/hermeznetwork/circuits) or [iden3](https://github.com/iden3/circomlib).
