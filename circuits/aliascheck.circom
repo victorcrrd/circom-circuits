@@ -1,5 +1,3 @@
-pragma circom 2.0.0;
-
 include "compconstant.circom";
 
 template AliasCheck() {
@@ -7,7 +5,7 @@ template AliasCheck() {
 
     component compConstant = CompConstant(-1);
 
-    for(var i = 0; i < 254; i++) in[i] ==> compConstant.in[i];
+    for (var i = 0; i < 254; i++) in[i] ==> compConstant.in[i];
 
     compConstant.out === 0;
 }

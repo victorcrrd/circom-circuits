@@ -1,5 +1,3 @@
-pragma circom 2.0.0;
-
 function nbits(a) {
     var n = 1;
     var r = 0;
@@ -25,15 +23,15 @@ template BinSum(n, ops) {
     var e2;
 
     e2 = 1;
-    for(k = 0; k < n; k++) {
-        for(j = 0; j < ops; j++) {
+    for (k = 0; k < n; k++) {
+        for (j = 0; j < ops; j++) {
             lin += in[j][k] * e2;
         }
         e2 = e2 + e2;
     }
 
     e2 = 1;
-    for(k = 0; k < nout; k++) {
+    for (k = 0; k < nout; k++) {
         out[k] <-- (lin >> k) & 1;
 
         // Ensure out is binary

@@ -1,5 +1,3 @@
-pragma circom 2.0.0;
-
 include "bitify.circom";
 include "binsum.circom";
 
@@ -59,7 +57,7 @@ template LessThan(n) {
     in[1] ==> num2Bits1.in;
 
     var i;
-    for(i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) {
         num2Bits0.out[i] ==> adder.in[0][i];
         num2Bits1.out[i] ==> adder.in[1][i];
     }
