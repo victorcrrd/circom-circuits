@@ -9,37 +9,37 @@ template Mux256() {
 
     var i;
     var j;
-    template mux[17];
+    custom_component mux[17];
 
-    for (i = 0; i < 17; ++i) {
+    for (i = 0; i < 17; i++) {
         mux[i] = Mux4();
     }
 
     // first mux level (mux[0]..mux[15])
     // selectors
-    for (i = 0; i < 16; ++i) {
-        for (j = 0; j < 4; ++j) {
+    for (i = 0; i < 16; i++) {
+        for (j = 0; j < 4; j++) {
             mux[i].s[j] <== s[j];
         }
     }
 
     // inputs
     var nMux = 0;
-    for (i = 0; i < 256; ++i) {
+    for (i = 0; i < 256; i++) {
         if ((i != 0) && (i % 16 == 0)) {
-            ++nMux;
+            nMux = nMux + 1;
         }
         mux[nMux].c[i % 16] <== in[i];
     }
 
     // second mux level (mux[16])
     // selectors
-    for (i = 0; i < 4; ++i) {
+    for (i = 0; i < 4; i++) {
         mux[16].s[i] <== s[i + 4];
     }
 
     // inputs
-    for (i = 0; i < 16; ++i){
+    for (i = 0; i < 16; i++){
         mux[16].c[i] <== mux[i].out;
     }
 
