@@ -1,8 +1,7 @@
-pragma circom 2.0.3;
 pragma ultraPlonk;
 
 include "../../circuits/bitify.circom";
-include "../../circuits/mux.circom";
+include "../../circuits/custom-gates/mux.circom";
 
 template Constants() {
     signal output out[2];
