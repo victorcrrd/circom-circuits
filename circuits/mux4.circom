@@ -1,4 +1,5 @@
 include "custom-gates/multimux4.circom";
+//include "multimux4.circom"
 
 template Mux4() {
     signal input c[16];
@@ -8,6 +9,7 @@ template Mux4() {
 
     var i;
     custom_component mux = MultiMux4(1);
+    //component mux = MultiMux4(1);
 
     for (i = 0; i < 16; i++) {
         mux.c[0][i] <== c[i];
