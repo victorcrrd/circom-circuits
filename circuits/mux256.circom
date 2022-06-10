@@ -9,7 +9,7 @@ template Mux256() {
 
     var i;
     var j;
-    custom_component mux[17];
+    component mux[17];
 
     for (i = 0; i < 17; i++) {
         mux[i] = Mux4();
