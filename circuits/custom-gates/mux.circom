@@ -1,4 +1,4 @@
-custom_gate Mux(n) {
+template custom Mux(n) {
     signal input c[n][2]; // constants
     signal input s; // selector
     signal output out[n];
