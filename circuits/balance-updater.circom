@@ -1,3 +1,5 @@
+pragma ultraPlonk;
+
 include "bitify.circom";
 include "comparators.circom";
 include "compute-fee.circom";

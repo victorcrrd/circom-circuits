@@ -1,3 +1,5 @@
+pragma ultraPlonk;
+
 custom_gate Mux(n) {
     signal input c[n][2]; // constants
     signal input s; // selector
