@@ -1,4 +1,4 @@
-pragma ultraPlonk;
+pragma custom_templates;
 
 include "bitify.circom";
 include "mux4.circom";

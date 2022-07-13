@@ -1,4 +1,4 @@
-pragma ultraPlonk;
+pragma custom_templates;
 
 include "bitify.circom";
 include "comparators.circom";

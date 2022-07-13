@@ -1,4 +1,4 @@
-pragma ultraPlonk;
+pragma custom_templates;
 
 include "../../circuits/bitify.circom";
 include "../../circuits/custom-gates/mux.circom";

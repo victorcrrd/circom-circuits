@@ -1,4 +1,4 @@
-pragma ultraPlonk;
+pragma custom_templates;
 
 include "custom-gates/multimux4.circom";
 //include "multimux4.circom"

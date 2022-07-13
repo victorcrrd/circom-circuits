@@ -1,5 +1,5 @@
 pragma circom 2.0.3;
-pragma ultraPlonk;
+pragma custom_templates;
 
 include "../../circuits/balance-updater.circom";
 
