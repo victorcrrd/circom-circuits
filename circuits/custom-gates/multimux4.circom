@@ -1,6 +1,6 @@
-pragma ultraPlonk;
+pragma custom_templates;
 
-custom_gate MultiMux4(n) {
+template custom MultiMux4(n) {
     signal input c[n][16];
     signal input s[4];
 

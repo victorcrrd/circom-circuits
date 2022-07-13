@@ -14,11 +14,11 @@ template Main() {
     signal input selector;
     signal output out;
 
-    custom_component mux = Mux(1);
+    component mux = Mux(1);
     component n2b = Num2Bits(1);
     component cst = Constants();
-    custom_component useless = Mux(1);
-    custom_component another_useless = Mux(2);
+    component useless = Mux(1);
+    component another_useless = Mux(2);
 
     selector ==> n2b.in;
     n2b.out[0] ==> mux.s;

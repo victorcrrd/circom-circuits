@@ -10,8 +10,7 @@ template Mux4() {
     signal output out;
 
     var i;
-    custom_component mux = MultiMux4(1);
-    //component mux = MultiMux4(1);
+    component mux = MultiMux4(1);
 
     for (i = 0; i < 16; i++) {
         mux.c[0][i] <== c[i];
